@@ -18,6 +18,9 @@ main {
   background-color: white;
   width: 87.2%;
   max-width: 384px;
+  border: 1px black solid;
+  box-shadow: 8px 8px black;
+  transition: 0.15s;
 }
 .attribution {
   font-size: 11px;
@@ -99,6 +102,16 @@ main {
 .publish-date {
   color: var(--gray-950);
 }
+
+/* Hover and active effects */
+main:hover .title {
+  color: var(--yellow);
+  cursor: pointer;
+}
+main:hover {
+  box-shadow: 16px 16px black;
+}
+
 /* Mobile approach and media-querries*/
 .button,
 .publish-date,
