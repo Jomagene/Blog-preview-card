@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  position: relative;
+  height: 100vh;
+  font-weight: var(--normal);
+}
+button {
+  padding: 4px 12px;
+}
+main {
+  background-color: white;
+  width: 87.2%;
+  max-width: 384px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.image-container {
+  height: 200px;
+  overflow: hidden;
+}
+.image-container img {
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --bold: 800;
+  --normal: 500;
+}
+
+/* Some reusable classes */
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.full {
+  height: 100%;
+  width: 100%;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.p-24 {
+  padding: 24px;
+}
+.size-32 {
+  height: 32px;
+  width: 32px;
+}
+.rounded-1 {
+  border-radius: 20px;
+}
+.rounded-2 {
+  border-radius: 10px;
+}
+.rounded-3 {
+  border-radius: 4px;
+}
+.bold {
+  font-weight: var(--bold);
+}
+.width-fit {
+  width: fit-content;
+}
