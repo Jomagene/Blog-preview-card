@@ -90,3 +90,38 @@ main {
 .width-fit {
   width: fit-content;
 }
+
+.button {
+  width: fit-content;
+  background: var(--yellow);
+  border: none;
+}
+.publish-date {
+  color: var(--gray-950);
+}
+/* Mobile approach and media-querries*/
+.button,
+.publish-date,
+.name {
+  font-size: 12px;
+}
+.title {
+  font-size: 20px;
+}
+.description {
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .button,
+  .publish-date,
+  .name {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
