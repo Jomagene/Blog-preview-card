@@ -7,7 +7,6 @@
 body {
   background-color: var(--yellow);
   font-family: "Figtree", sans-serif;
-  position: relative;
   height: 100vh;
   font-weight: var(--normal);
 }
@@ -21,15 +20,6 @@ main {
   border: 1px black solid;
   box-shadow: 8px 8px black;
   transition: 0.15s;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  position: absolute;
-  bottom: 10px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
 .image-container {
   height: 200px;
