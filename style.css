@@ -65,8 +65,8 @@ main {
   height: 100%;
   width: 100%;
 }
-.gap-12 {
-  gap: 12px;
+.gap-11 {
+  gap: 11px;
 }
 .gap-24 {
   gap: 24px;
@@ -117,12 +117,16 @@ main:hover {
 .publish-date,
 .name {
   font-size: 12px;
+  line-height: 150%;
 }
 .title {
   font-size: 20px;
+  line-height: 150%;
 }
 .description {
   font-size: 14px;
+  color: var(--gray-500);
+  line-height: 150%;
 }
 
 @media (min-width: 576px) {
