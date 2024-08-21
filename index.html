@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a styled reusable blog priview card" />
 
     <link
       rel="icon"
@@ -15,11 +18,11 @@
   </head>
   <body class="flex flex-center">
     <main class="flex column gap-24 p-24 rounded-1">
-      <section class="image-container rounded-2 flex flex-center">
+      <figure class="image-container rounded-2 flex flex-center">
         <img
           src="./assets/images/My-article.svg"
           alt="My article image illustration" />
-      </section>
+      </figure>
       <section class="flex column gap-11">
         <button class="bold flex flex-center rounded-3 button">Learning</button>
         <p class="publish-date">Published 21 Dec 2023</p>
@@ -29,13 +32,13 @@
           content, and presentation.
         </p>
       </section>
-      <section class="flex gap-11 width-fit flex-center">
+      <figure class="flex gap-11 width-fit flex-center">
         <img
           src="./assets/images/My-avatar.webp"
           alt="The profile avatar"
           class="size-32" />
-        <span class="bold name">Greg Hooper</span>
-      </section>
+        <figcaption class="bold name">Greg Hooper</figcaption>
+      </figure>
     </main>
   </body>
 </html>
