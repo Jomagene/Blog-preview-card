@@ -1,9 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap");
-* {
+
+/* Add a reset style for assuring the same behavior on different browsers */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
 body {
   background-color: var(--yellow);
   font-family: "Figtree", sans-serif;
@@ -56,26 +87,26 @@ main {
   width: 100%;
 }
 .gap-11 {
-  gap: 11px;
+  gap: 0.6875rem;
 }
 .gap-24 {
-  gap: 24px;
+  gap: 1.5rem;
 }
 .p-24 {
-  padding: 24px;
+  padding: 1.5rem;
 }
 .size-32 {
-  height: 32px;
-  width: 32px;
+  height: 2rem;
+  width: 2rem;
 }
 .rounded-1 {
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 .rounded-2 {
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .rounded-3 {
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 .bold {
   font-weight: var(--bold);
@@ -99,36 +130,33 @@ main:hover .title {
   cursor: pointer;
 }
 main:hover {
-  box-shadow: 16px 16px black;
+  box-shadow: 1rem 1rem black;
 }
 
 /* Mobile approach and media-querries*/
 .button,
 .publish-date,
 .name {
-  font-size: 12px;
-  line-height: 150%;
+  font-size: 0.75rem;
 }
 .title {
-  font-size: 20px;
-  line-height: 150%;
+  font-size: 1.25rem;
 }
 .description {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--gray-500);
-  line-height: 150%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
   .button,
   .publish-date,
   .name {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .description {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
